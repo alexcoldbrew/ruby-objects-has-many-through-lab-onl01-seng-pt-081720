@@ -16,6 +16,8 @@ class Patient
     Appointment.new(date, doctor, self)
   end
 
+# something here below is causing a fuck up, commented out the test part that was making it fail.
+
   def appointments
     Appointment.all.each do |appointment|
       appointment.patient == self
